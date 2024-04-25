@@ -5,3 +5,105 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+:root {
+  --orange: #ee3b04;
+  --green: #04ee3b;
+  --blue: #3504d5;
+  --black: #262626;
+  --grey: #797979;
+  --title: "Nobile";
+  --nav: "Alatsi";
+  --text: "Darker Grotesque";
+}
+
+body {
+  background: #262626;
+  background: linear-gradient(45deg, #262626, #312f2f);
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a:visited {
+  color: white;
+}
+
+header {
+  position: fixed;
+  min-height: 10vh;
+  width: 100%;
+  background: rgb(121, 121, 121);
+  background: radial-gradient(
+    circle,
+    rgba(121, 121, 121, 1) 0%,
+    rgba(177, 177, 177, 1) 0%,
+    rgba(121, 121, 121, 1) 100%
+  );
+  color: white;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+  margin-right: 100px;
+}
+
+#nav-list-container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.nav-item {
+  font-family: var(--nav), sans-serif;
+}
+
+#Hero-section {
+  height: 100vh;
+  padding: 18vh 10vw 0 10vw;
+}
+
+img {
+  border-radius: 50%;
+  border: 5px solid var(--grey);
+  box-shadow: 0px 5px 5px 0px rgba(240, 239, 245, 0.2);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-content {
+  min-height: 400px;
+  font-family: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-title {
+  color: var(--orange);
+  font-family: var(--title), sans-serif;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  padding: 20px;
+}
+
+.hero-content p {
+  font-size: 1.8em;
+  font-weight: 500;
+}
